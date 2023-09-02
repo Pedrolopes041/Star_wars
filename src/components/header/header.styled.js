@@ -16,11 +16,11 @@ export const HeaderContainer = styled.div`
 export const HeaderItens = styled.div`
   display: flex;
   flex-direction: row;
+  font-size: 1.1rem;
   gap: 20px;
 `;
 export const HeaderItem = styled.div`
   color: white;
 `;
 
-export const Logo = styled.div`
-`;
+export const Logo = styled.div``;
