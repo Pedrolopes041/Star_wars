@@ -12,6 +12,7 @@ export const Container = styled.div`
   align-items: center;
   color: white;
   height: 100vh;
+  gap: 20px;
 `;
 
 export const ContainerDetails = styled.div`

@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import nave from "../../assets/images/pngwing.com.png";
+
+const float = keyframes`
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+`;
 
 export const Container = styled.div`
   background: rgba(0, 0, 0, 0.7);
@@ -14,6 +24,11 @@ export const Container = styled.div`
   align-items: center;
   height: 480px;
   gap: 10px;
+
+  img {
+    animation: ${float} 2s ease-in-out infinite alternate;
+    src: ${nave};
+  }
 `;
 export const ContainerDetailsP = styled.div`
   background-color: #1b1b1b;
