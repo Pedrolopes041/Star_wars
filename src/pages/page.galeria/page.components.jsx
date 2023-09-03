@@ -27,25 +27,26 @@ const Galeria = () => {
     <>
       <Header />
       <Container>
-        
         <h1>Personagens</h1>
         <ContainerDetails>
-
           {loading ? (
-            <Loading/>
+            <>
+              <Loading />
+            </>
           ) : (
             person.map((p) => (
-              <Card key={p.name}>
-                <p>Nome: {p.name}</p>
-                <p>Mass: {p.mass}</p>
-                <p>hair color: {p.hair_color}</p>
-                <p>skin color: {p.skin_color}</p>
-                <p>eye color: {p.eye_color}</p>
-                <p>gender: {p.gender}</p>
-              </Card>
+              <>
+                <Card key={p.name}>
+                  <p>Nome: {p.name}</p>
+                  <p>Mass: {p.mass}</p>
+                  <p>hair color: {p.hair_color}</p>
+                  <p>skin color: {p.skin_color}</p>
+                  <p>eye color: {p.eye_color}</p>
+                  <p>gender: {p.gender}</p>
+                </Card>
+              </>
             ))
           )}
-          
         </ContainerDetails>
       </Container>
     </>

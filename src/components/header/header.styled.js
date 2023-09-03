@@ -23,4 +23,11 @@ export const HeaderItem = styled.div`
   color: white;
 `;
 
-export const Logo = styled.div``;
+export const Logo = styled.div`
+  @media (max-width: 768px) {
+    img {
+      width: 100px;
+      height: 50px;
+    }
+  }
+`;

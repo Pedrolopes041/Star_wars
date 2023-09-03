@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import ImgSrc from "../../assets/images/astronomia-do-ceu-noturno-galactico-e-ciencia-combinaram-ia-generativa.jpg";
 
 export const Container = styled.div`
   display: flex;
@@ -9,10 +8,15 @@ export const Container = styled.div`
   color: white;
 
   height: 100vh;
-  background-image: url(${ImgSrc});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+  @media (max-width: 768px) {
+    height: 100%;
+    padding: 30px;
+
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
 `;
 
 export const ContainerDetailsP = styled.div`
@@ -21,6 +25,14 @@ export const ContainerDetailsP = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 90%;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 `;
 
 export const ContainerDetails = styled.div`

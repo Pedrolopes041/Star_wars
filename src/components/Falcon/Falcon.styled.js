@@ -28,6 +28,15 @@ export const Container = styled.div`
   img {
     animation: ${float} 2s ease-in-out infinite alternate;
     src: ${nave};
+
+    @media (max-width: 768px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 340px;
   }
 `;
 export const ContainerDetailsP = styled.div`
